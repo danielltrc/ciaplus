@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIA Plus - Internet de Banda Larga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-escuro: #00379f;
+            --azul-claro: #1f75eb;
+            --laranja-escuro: #db5014;
+            --laranja-claro: #f5c068;
+            --cinza-fundo: #f0f2f5;
+            --texto-principal: #333;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--cinza-fundo);
+            color: var(--texto-principal);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 300px;
+            margin-bottom: 30px;
+        }
+
+        .plan-card {
+            background: linear-gradient(135deg, var(--azul-claro), var(--azul-escuro));
+            color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .plan-card h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .plan-card .price {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .plan-card p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--laranja-escuro);
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: var(--laranja-claro);
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="/logo.png" alt="Logo da CIA Plus" class="logo">
+        
+        <h1>Internet de Banda Larga de Alta Velocidade!</h1>
+        <p>Conecte-se com a velocidade que você merece. Chegou a sua hora de ter a melhor experiência de navegação.</p>
+
+        <div class="plan-card">
+            <h2>Plano Essencial</h2>
+            <div class="price">R$ 100<small>/mês</small></div>
+            <p><strong>600 Mbps</strong> de velocidade</p>
+            <p>Perfeito para streaming, jogos online e trabalho em casa.</p>
+        </div>
+
+        <a href="https://wa.me/5591991493626?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20de%20600%20Mbps." class="cta-button">
+            Fale com a gente no WhatsApp!
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CIA Plus. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
